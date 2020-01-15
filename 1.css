@@ -7,11 +7,14 @@ body {
   background-color: #ff0000; 
   border: none;
   color: white;
-  padding: 8px 32px;
+  padding: 6px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 25px;
+  font-size:25px;
+  font-style:aqua;
+  font-weight:bold;
+  
 }
 
 
