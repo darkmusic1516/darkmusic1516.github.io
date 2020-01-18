@@ -16,5 +16,10 @@ body {
   font-weight:bold;
   
 }
+.ImageBorder
+{
+    border-width: 1px;
+    border-color: white;
+}
 
 
