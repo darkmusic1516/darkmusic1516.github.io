@@ -1,0 +1,20 @@
+from random import randint
+string="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST "
+string1="POIULKJHMNBVYTREGFDSCXZWQAqwertyuioplkjhgfdsazxcvbnm "
+result=''
+x=input()
+for a in x:
+    pos=string.find(a)
+    char=string1[pos]
+    result=result+char
+print(result)
+result1=''
+y=input()
+for b in y:
+    pos1=string1.find(b)
+    char1=string[pos1]
+    result1=result1+char1
+print(result1)
+
+
+
