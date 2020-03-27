@@ -1,0 +1,83 @@
+import os
+print("\t\t\t\ttic-tac-toe")
+
+def board():
+    if call.lower()=="yes":
+     os.system("cls")
+     print(mylist[0] + '\t|' + mylist[1] + '\t|' + mylist[2])
+     print("------------------------")
+     print(mylist[3] + '\t|' + mylist[4] + '\t|' + mylist[5])
+     print("------------------------")
+     print(mylist[6] + '\t|' + mylist[7] + '\t|' + mylist[8])
+    else:
+        print("thanks!")
+def intake():
+    for intake in range(0,5):
+        in_take=input("enter position player 1\n")
+        mylist[int(in_take)-1]=player_1
+        board()
+        if mylist[0] == player_1 and mylist[1] == player_1 and mylist[2] == player_1 or mylist[0] == player_1 and \
+                mylist[3] == player_1 and mylist[6] == player_1 or mylist[0] == player_1 and mylist[4] == player_1 and \
+                mylist[8] == player_1 or mylist[1] == player_1 and mylist[4] == player_1 and mylist[7] == player_1 or \
+                mylist[2] == player_1 and mylist[5] == player_1 and mylist[8] == player_1 or mylist[2] == player_1 and \
+                mylist[4] == player_1 and mylist[6] == player_1 or mylist[3] == player_1 and mylist[4] == player_1 and \
+                mylist[5] == player_1 or mylist[6] == player_1 and mylist[7] == player_1 and mylist[8] == player_1:
+            
+            print("player 1 wins!")
+            break
+        elif mylist[0] == player_2 and mylist[1] == player_2 and mylist[2] == player_2 or mylist[0] == player_2 and \
+                mylist[3] == player_2 and mylist[6] == player_2 or mylist[0] == player_2 and mylist[4] == player_2 and \
+                mylist[8] == player_2 or mylist[1] == player_2 and mylist[4] == player_2 and mylist[7] == player_2 or \
+                mylist[2] == player_2 and mylist[5] == player_2 and mylist[8] == player_2 or mylist[2] == player_2 and \
+                mylist[4] == player_2 and mylist[6] == player_2 or mylist[3] == player_2 and mylist[4] == player_2 and \
+                mylist[5] == player_2 or mylist[6] == player_2 and mylist[7] == player_2 and mylist[8] == player_2:
+            
+            print("player 2 wins!")
+            break
+        in_take2=input('enter player 2\n')
+        mylist[int(in_take2)-1]=player_2
+        board()
+        if mylist[0] == player_1 and mylist[1] == player_1 and mylist[2] == player_1 or mylist[0] == player_1 and \
+                mylist[3] == player_1 and mylist[6] == player_1 or mylist[0] == player_1 and mylist[4] == player_1 and \
+                mylist[8] == player_1 or mylist[1] == player_1 and mylist[4] == player_1 and mylist[7] == player_1 or \
+                mylist[2] == player_1 and mylist[5] == player_1 and mylist[8] == player_1 or mylist[2] == player_1 and \
+                mylist[4] == player_1 and mylist[6] == player_1 or mylist[3] == player_1 and mylist[4] == player_1 and \
+                mylist[5] == player_1 or mylist[6] == player_1 and mylist[7] == player_1 and mylist[8] == player_1:
+            
+            print("player 1 wins!")
+            break
+        elif mylist[0] == player_2 and mylist[1] == player_2 and mylist[2] == player_2 or mylist[0] == player_2 and \
+                mylist[3] == player_2 and mylist[6] == player_2 or mylist[0] == player_2 and mylist[4] == player_2 and \
+                mylist[8] == player_2 or mylist[1] == player_2 and mylist[4] == player_2 and mylist[7] == player_2 or \
+                mylist[2] == player_2 and mylist[5] == player_2 and mylist[8] == player_2 or mylist[2] == player_2 and \
+                mylist[4] == player_2 and mylist[6] == player_2 or mylist[3] == player_2 and mylist[4] == player_2 and \
+                mylist[5] == player_2 or mylist[6] == player_2 and mylist[7] == player_2 and mylist[8] == player_2:
+          
+            print("player 2 wins!")
+            break
+
+a = input("player 1 enter your symbol 'x' or 'o':\n")
+player_1 = a
+if player_1 == 'x':
+    player_2 = 'o'
+    print('player 2 you got:' + player_2 + "\n")
+else:
+    player_2 = 'x'
+    print('player 2 you got:' + player_2 + "\n")
+for q in range(0, 1000):
+ call=input("should we start?yes or no\n")
+ mylist=['  ','  ','  ','  ','  ','  ','  ','  ','  ']
+ board()
+ intake()
+ again=input("wanna play again?")
+ if again.lower()=="yes":
+  os.system("cls")
+  continue
+ else:
+  os.system("cls")
+  print("thank you for playing!")
+  input()
+  break
+
+
+
