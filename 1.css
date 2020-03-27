@@ -4,9 +4,9 @@ body {
   background-repeat:no-repeat;
 }
 .button {
-  background-color: #ff0000; 
+  background-color:; 
   border: none;
-  color: white;
+  color: red;
   padding: 6px 30px;
   text-align: center;
   text-decoration: none;
@@ -46,3 +46,6 @@ body {
   font-style:aqua;
   font-weight:bold;  
 }
+.button {border-radius: 30px;}
+.buttonpg {border-radius: 30px;}
+.buttondw {border-radius: 30px;}
