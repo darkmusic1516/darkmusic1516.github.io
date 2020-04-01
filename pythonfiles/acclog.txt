@@ -1,40 +1,26 @@
-import sqlite3
+class account:
+    def __init__(self,username,password):
+        self.username = username
+        self.password = password
 
-mydb = sqlite3.connect('acc_login.db')
-cur = mydb.cursor()
-acc_app = "CREATE TABLE if not exists acc_app(username varchar(20),password varchar(20))"
-cur.execute(acc_app)
+    def login_acc(self):
+        passcode = input("enter password!")
+        if passcode == self.password:
+            print("logged in successfully!")
+        else:
+            print("wrong!try again.")
 
-def sign_up():
-    UN=input("enter user name")
-    PS=input("enter a strong password")
-    un="insert into acc_app(username,password) values(?,?)"
-    values=(UN,PS)
-    cur.execute(un,values)
-    mydb.commit()
-    print("Account created")
+print("\t\t\tP-Project_registration\t\t\t\n")
+while True:
+ print("1.sign-up\t\t2.Log-in")
+ x=input("enter accordingly!\n")
+ if int(x) == 1:
+      username = input("set username:\n")
+      password = input("set password:\n")
+      acc = account(username,password)
+      print("account created")
 
-def sign_in():
-    UN=input("enter your user name")
-    PS=input("enter your password")
-    data_abs="select * from acc_app where username = ?"
-    cur.execute(data_abs,(UN,))
-    result=cur.fetchall()
-    [(un,ps)]=result
-    if ps==PS:
-        print("correct password")
-    else:
-        print("wrong!")
-
-
-print("\t\t\t\tPROJECTF\t\t\t\t")
-for _ in range(100):
-    print("1. Sign-in\t\t\t\t2. Sign-Up")
-    x=input("")
-    if x=="1":
-        sign_in()
-    elif x=="2":
-        sign_up()
-        print("account created")
-    else:
-        break
+ elif int(x) == 2:
+      acc.login_acc()
+ else:
+     break
