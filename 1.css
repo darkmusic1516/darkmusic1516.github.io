@@ -46,6 +46,20 @@ body {
   font-style:aqua;
   font-weight:bold;  
 }
+.button10 {
+  background-color:white; 
+  border: none;
+  color: red;
+  padding: 6px 30px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size:35px;
+  font-style:aqua;
+  font-weight:bold;
+  
+}
+.button10 {border-radius: 30px;}
 .button {border-radius: 30px;}
 .buttonpg {border-radius: 30px;}
 .buttondw {border-radius: 30px;}
