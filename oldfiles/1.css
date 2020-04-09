@@ -1,0 +1,68 @@
+body {
+  background-color: black;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+}
+.button {
+  background-color:white; 
+  border: none;
+  color: red;
+  padding: 6px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:25px;
+  font-style:aqua;
+  font-weight:bold;
+  
+}
+.ImageBorder
+{
+    border-width: 1px;
+    border-color: white;
+}
+.buttonpg {
+  background-color: #ff0000; 
+  border: none;
+  color: white;
+  padding: 4px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:15px;
+  font-style:aqua;
+  font-weight:bold;
+  
+}
+.buttondw {
+  background-color: #ff0000; 
+  border: none;
+  color: white;
+  padding: 4px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:15px;
+  font-style:aqua;
+  font-weight:bold;  
+}
+.button10 {
+  background-color:white; 
+  border: none;
+  color: red;
+  padding: 6px 30px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size:35px;
+  font-style:aqua;
+  font-weight:bold;
+  
+}
+.button10 {border-radius: 30px;}
+.button {border-radius: 30px;}
+.buttonpg {border-radius: 30px;}
+.buttondw {border-radius: 30px;}
+
+
+
