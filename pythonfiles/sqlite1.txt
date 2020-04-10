@@ -1,0 +1,51 @@
+import sqlite3
+
+mydb = sqlite3.connect("any.db")
+cur = mydb.cursor()
+
+create_table = "CREATE TABLE if not exists any_table(name varchar(20),email varchar(20),address varchar(40))"
+cur.execute(create_table)
+
+def data_entry():
+    name = input("enter name:\n")
+    mail = input("enter mail:\n")
+    address = input("enter address:\n")
+    insert_data = "INSERT into any_table(name,email,address) values(?,?,?)"
+    values = (name,mail,address)
+    cur.execute(insert_data,values)
+    mydb.commit()
+    print("data inserted")
+
+def update_data():
+    email = input("enter new email:\n")
+    name = input("enter name of person:\n")
+    update_data = "UPDATE any_table set email = ? where name = ?"
+    values = (email,name)
+    cur.execute(update_data,values)
+    mydb.commit()
+
+def data_fetch():
+    email=input("enter the email of person:\n")
+    query = "SELECT * from any_table where email = ?"
+    cur.execute(query,(email,))
+    result = cur.fetchall()
+    [(n,e,a)] = result
+    print("name is {}".format(n))
+    print("address is {}".format(a))
+
+def delete_data():
+    email = input("enter the email of person's account:\n")
+    query = "DELETE from any_table where email = ?"
+    cur.execute(query,(email,))
+    mydb.commit()
+    print("Account deleted")
+
+def sum_table():
+    name = input("enter name:\n")
+    query = "select AVG(email) from any_table where name = ?"
+    cur.execute(query,(name,))
+    result = cur.fetchall()
+    [(sum,)] = result
+    print(sum)
+
+sum_table()
