@@ -1,0 +1,12 @@
+2020 - Full Stack:
+. JUNE :-
+1. python and libs
+2. flutter and firebase
+
+.JULY :-
+1.WEB-DEV
+
+.August :-
+1.projects
+2.data-structures
+3.Algorithms
